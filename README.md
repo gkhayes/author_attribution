@@ -1,14 +1,14 @@
 # Author Attribution Analysis - README
 
 ## Installation
-The code was written in Python 3 and requires the following packages: NumPy, Pandas, Chardet, Collections, Seaborn, Matplotlib, String, Time, NLTK, Scikit-Learn (sklearn) and Keras.
+The code was written in Python 3 and requires the following packages: NumPy, Pandas, Chardet, Collections, Seaborn, Matplotlib, String, Time, NLTK, Scikit-Learn (sklearn), Keras and SciPy.
 
 ## Project Overview
-Author attribution "is the task of identifying the author of a given text from a (given) set of suspects" (Mohsen et al. (2016)). Up until early this century, it was believed that texts had to be a minimum of 250 words in length for for the stylometric characteristics to be apparent and for author attribution to be successful. However, recent research has demonstrated the successful application of author attribution techniques to Twitter messages ("tweets"), which "average less than 25 words" in length and are "often less than 10" words long (Green and Sheppard (2013)).
+Author attribution "is the task of identifying the author of a given text from a (given) set of suspects" (Mohsen et al. (2016)). Up until early this century, it was believed that texts had to be a minimum of 250 words in length for the stylometric characteristics to be apparent and for author attribution to be successful. However, recent research has demonstrated the successful application of author attribution techniques to Twitter messages ("tweets"), which "average less than 25 words" in length and are "often less than 10" words long (Green and Sheppard (2013)).
 
-Tweets are currently limited to 280 characters, and prior to November 2017, were limited to 140 characters. As a result, "tweets are relatively self-contained and have smaller sentence length variance compared to excerpts from longer text" (Schwartz (2013)). It is possible that these characteristics are the reason why author attribution techniques, that have previously fallen apart when applied to shorter texts, have succeeded when applied to tweets. It is also possible that, had more modern machine learning algorithms , such as support vector machines (SVMs) and neural networks, been in common usage when the conclusion were drawn about the minimum text length required to successfully identify the author of a text, that different conclusions may have been reached.
+Tweets are currently limited to 280 characters, and prior to November 2017, were limited to 140 characters. As a result, "tweets are relatively self-contained and have smaller sentence length variance compared to excerpts from longer text" (Schwartz (2013)). It is possible that these characteristics are the reason why author attribution techniques, that have previously fallen apart when applied to shorter texts, have succeeded when applied to tweets. It is also possible that, had more modern machine learning algorithms, such as support vector machines (SVMs) and neural networks, been in common usage when the previously mentioned conclusions were drawn about the minimum text length required to successfully identify the author of a text, that different conclusions may have been reached.
 
-In this analysis we explore these hypotheses by applying a Convolutional Neural Network (CNN) based approach that has previously been demonstrated (by Shrestha et al. (2017)) to succeed in determining the authorship of tweets, to short, tweet-length, excerpts of longer works. In performing this analysis, we make use of of a dataset comprising 68,000 sentence-long excerpts from the (fiction) works of eight classic authors (Louisa May Alcott, Jane Austen, Charlotte Bronte, Wilkie Collins, Arthur Conan Doyle, L.M. Montgomery, Bram Stoker and Mark Twain), along with labels identifying the author of each excerpt.
+In this analysis we explore these hypotheses by applying techniques that have been demonstrated to succeed in determining the authorship of tweets, to short, tweet-length, excerpts of longer works. In performing this analysis, we make use of of a dataset comprising 68,000 sentence-long excerpts from the (fiction) works of eight classic authors (Louisa May Alcott, Jane Austen, Charlotte Bronte, Wilkie Collins, Arthur Conan Doyle, L.M. Montgomery, Bram Stoker and Mark Twain), along with labels identifying the author of each excerpt.
 
 The novels used the create the dataset used in this analysis are:
 
@@ -29,7 +29,7 @@ The novels used the create the dataset used in this analysis are:
 * **analysis.ipynb**: this Jupyter notebook contains all of the analysis for this project. To run this code, first run the code in create_dataset.ipynb to create the author dataset (author_data.csv), then save the author dataset and this notebook in the same directory.
 
 ## Results
-The main findings of this analysis are summarized in a technical report included in this repository in Report.pdf (here)<add hyperlink>.
+The main findings of this analysis are summarized in a technical report included in this repository in **Report.pdf** [here](https://github.com/gkhayes/author_attribution/blob/master/Report.pdf).
 
 ## Licensing, Authors, Acknowledgements
 The novel texts used in this analysis were all sourced from [Project Gutenberg](https://www.gutenberg.org/) and made available for download under the [Project Gutenberg License](https://www.gutenberg.org/wiki/Gutenberg:The_Project_Gutenberg_License). 
